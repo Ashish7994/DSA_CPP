@@ -13,6 +13,8 @@ class solution{
             currsum += arr[i];
             maxsum = max(maxsum, currsum);
         }
+        if(currsum < 0)
+            currsum = 0;
         return maxsum;
     }
 
@@ -25,6 +27,8 @@ class solution{
             currsum += val;
             maxsum = max(maxsum, currsum);
         }
+        if(currsum < 0)
+            currsum = 0;
         return maxsum;
     }
 
